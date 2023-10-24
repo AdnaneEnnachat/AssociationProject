@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar */
+.container-top-nav{
+    border: 1px solid #243c7b;
+    background-color: #243c7b;
+    padding: 12px;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav a{
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.top-nav a:hover{
+    opacity: 1;
+    transition: all .3s ease-out;
+}
+.top-nav .first-of-topNav,.top-nav .seconde-of-topNav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hr{
+    border: 1px solid #f5f5f580;
+    height: 20px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-nav-links{
+    display: contents;
+}
+
+.main-nav .list-links{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.main-nav .list-links li a{
+    text-decoration: none;
+    color: #243c7b;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.main-nav .inscription{
+    display: block;
+    margin-left: auto;
+
+}
+.main-nav .inscription button{
+    border: 1px solid #243c7b;
+    background-color: #243c7b;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 25px 8px 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.main-nav .inscription button:hover{
+    color: #243c7b;
+    background-color: white;
+    transition: all .4s ease-in-out;
+}
+.main-nav .list-links li a:after {
+    content: '';
+    display: block;
+    border: 0 solid #243c7b;
+    width: 0;
+    color: #243c7b;
+    transform-origin: left;
+}
+.main-nav .list-links li a:hover::after {
+    content: '';
+    display: block;
+    border: 1px solid #243c7b;
+    width: 100%;
+    color: #243c7b;
+    transition: all .4s ease-in;
+}
+.menu{
+    display: none;
+}
+@media (max-width: 991px) {
+    .main-nav .list-links {
+        gap: 30px;
+    }
+    .main-nav-links {
+        display: contents;
+    }
+}
+@media (max-width: 770px) {
+    .main-nav-links {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        height: 100%;
+        top: 0;
+        border: 1px solid #243c7b;
+        background-color: #243c7b;
+        left: -300px;
+        width: 230px;
+        transition: all .5s ease-out;
+    }
+    .active-list{
+        left: 0;
+        transition: all .5s ease-in;
+    }
+    .main-nav .list-links {
+        display: block;
+        margin-top: 80px;
+        line-height: 40px;
+        padding-inline-start: 0;
+        text-align: center;
+    }
+    .main-nav .list-links li a{
+        color: #ffffff;
+    }
+    .main-nav .inscription button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .main-nav .list-links li a:after {
+        content: '';
+        display: block;
+        border: 0 solid #243c7b;
+        width: 0;
+        color: #ffffff;
+        transform-origin: left;
+    }
+    .main-nav .list-links li a:hover::after {
+        content: '';
+        display: block;
+        border: 1px solid #243c7b;
+        width: 100%;
+        color: #ffffff;
+        transition: all .4s ease-in;
+    }
+    .main-nav .inscription button {
+        border: 1px solid #ffff;
+        background-color: #ffff;
+        color: #243c7b;
+    }
+    .main-nav .inscription button:hover{
+        border: 1px solid #ffff;
+        background-color: #243c7b;
+        color: #ffffff;
+    }
+
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .slick-slide img {
+        display: block;
+        width: 100%;
+        max-height: 400px;
+    }
+}
+/* end nav bar */
+
+
+
+
+

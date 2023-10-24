@@ -1,0 +1,124 @@
+.first-footer{
+    background-color: #212121;
+    color: white;
+    padding: 60px;
+}
+.container-first-footer{
+    display: flex;
+    gap: 40px;
+}
+.step-info{
+    max-width: 400px;
+
+}
+.footer-hr{
+    border: 1px solid #ffffff59;
+    height: 240px;
+
+}
+.container-first-footer .detail-contact{
+    display: flex;
+    gap: 20px;
+    ALIGN-ITEMS: center;
+    LINE-HEIGHT: 40PX;
+
+}
+.container-first-footer .detail-contact p{
+    color: #edf2f782;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.container-first-footer .detail-contact img{
+    filter: brightness(0) invert(1);;
+}
+.container-first-footer .step-info p,.container-first-footer .contact-info .section-contact{
+    margin-top: 40px;
+}
+.container-first-footer .contact-info .section-contact  div:first-child{
+    margin-left: -5px;
+}
+.container-first-footer .step-info p{
+    color: #edf2f782;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.first-footer .container-first-footer h5{
+    font-size: 19px;
+    font-family: monospace;
+}
+.container-first-footer .social-info .detail-social{
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+.container-first-footer .step-info p:hover,.container-first-footer .detail-contact p:hover{
+    color: #ffffff;
+    transition: all .4s ease-out;
+}
+@media (max-width: 1060px) {
+    .container-first-footer{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+    .footer-hr{
+        border: none;
+        display: none;
+    }
+    .step-info {
+        max-width: 100%;
+    }
+
+    .container-first-footer .social-info .detail-social{
+        display: flex;
+        gap: 20px;
+        margin-top: 45px;
+        padding-bottom: 10px;
+    }
+}
+.seconde-footer{
+    background-color: #212121;
+}
+.seconde-footer .container-seconde-footer{
+    border-top: 1px solid #ffffff59;
+    padding: 5px;
+}
+.seconde-footer .container-seconde-footer .copyright p{
+    color: #edf2f7;
+    font-size: 14px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+@media (max-width: 500px) {
+    .container-first-footer .detail-contact img {
+        width: 25px;
+    }
+    .container-first-footer .detail-contact p{
+        font-size: 13px;
+    }
+    .container-first-footer .social-info .detail-social {
+        margin-top: 30px;
+
+    }
+    .container-first-footer .social-info .detail-social img{
+        width: 20px;
+    }
+
+}
+@media (max-width: 375px){
+    .first-footer{
+        padding: 0;
+    }
+    .step-info {
+        margin-top: 20px;
+    }
+
+
+}
